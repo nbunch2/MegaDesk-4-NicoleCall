@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace MegaDesk_3_NicoleCall
 {
-    public partial class MainMenu : Form
+    public partial class AddQuote : Form
     {
-        public MainMenu()
+        public AddQuote()
         {
             InitializeComponent();
-        }
-
-        private void addNewQuote_Click(object sender, EventArgs e)
-        {
-            AddQuote addNewQuoteForm = new AddQuote();
-            addNewQuoteForm.Tag = this;
-            addNewQuoteForm.Show(this);
-            Hide();
         }
     }
 }
