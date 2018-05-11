@@ -16,5 +16,11 @@ namespace MegaDesk_3_NicoleCall
         {
             InitializeComponent();
         }
+
+        private void DisplayQuote_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            var AddQuote = (AddQuote)Tag;
+            AddQuote.Show();
+        }
     }
 }
