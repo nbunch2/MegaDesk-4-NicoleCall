@@ -57,6 +57,7 @@
             this.viewQuote.TabIndex = 1;
             this.viewQuote.Text = "View Quote";
             this.viewQuote.UseVisualStyleBackColor = true;
+            this.viewQuote.Click += new System.EventHandler(this.viewQuote_Click);
             // 
             // searchQuotes
             // 
@@ -67,6 +68,7 @@
             this.searchQuotes.TabIndex = 2;
             this.searchQuotes.Text = "Search Quotes";
             this.searchQuotes.UseVisualStyleBackColor = true;
+            this.searchQuotes.Click += new System.EventHandler(this.searchQuotes_Click);
             // 
             // exit
             // 
@@ -77,6 +79,7 @@
             this.exit.TabIndex = 3;
             this.exit.Text = "Exit";
             this.exit.UseVisualStyleBackColor = true;
+            this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
             // pictureBox1
             // 
@@ -99,6 +102,7 @@
             this.Controls.Add(this.addNewQuote);
             this.Name = "MainMenu";
             this.Text = "Mega Desk";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainMenu_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

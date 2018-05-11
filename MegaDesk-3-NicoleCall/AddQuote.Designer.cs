@@ -214,6 +214,7 @@
             this.requestQuote.TabIndex = 14;
             this.requestQuote.Text = "Get Quote";
             this.requestQuote.UseVisualStyleBackColor = false;
+            this.requestQuote.Click += new System.EventHandler(this.requestQuote_Click);
             // 
             // cancel
             // 
@@ -225,6 +226,7 @@
             this.cancel.TabIndex = 15;
             this.cancel.Text = "Cancel";
             this.cancel.UseVisualStyleBackColor = false;
+            this.cancel.Click += new System.EventHandler(this.cancel_Click);
             // 
             // AddQuote
             // 
@@ -249,6 +251,7 @@
             this.Controls.Add(this.label1);
             this.Name = "AddQuote";
             this.Text = "AddQuote";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AddQuote_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.width)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.depth)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.drawers)).EndInit();

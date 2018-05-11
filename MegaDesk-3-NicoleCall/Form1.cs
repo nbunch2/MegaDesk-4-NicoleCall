@@ -24,5 +24,31 @@ namespace MegaDesk_3_NicoleCall
             addNewQuoteForm.Show(this);
             Hide();
         }
+
+        private void viewQuote_Click(object sender, EventArgs e)
+        {
+            ViewAllQuotes DisplayAllQuoteForm = new ViewAllQuotes();
+            DisplayAllQuoteForm.Tag = this;
+            DisplayAllQuoteForm.Show(this);
+            Hide();
+        }
+
+        private void searchQuotes_Click(object sender, EventArgs e)
+        {
+            SearchQuotes SearchQuoteForm = new SearchQuotes();
+            SearchQuoteForm.Tag = this;
+            SearchQuoteForm.Show(this);
+            Hide();
+        }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void MainMenu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

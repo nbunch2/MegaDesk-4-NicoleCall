@@ -8,5 +8,7 @@ namespace MegaDesk_3_NicoleCall
 {
     class Desk
     {
+        public String customerName { get; set; };
+        public int width { get; set; };
     }
 }

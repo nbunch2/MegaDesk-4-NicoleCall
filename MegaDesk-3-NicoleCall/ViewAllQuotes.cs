@@ -16,5 +16,11 @@ namespace MegaDesk_3_NicoleCall
         {
             InitializeComponent();
         }
+
+        private void ViewAllQuotes_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            var mainMenu = (MainMenu)Tag;
+            mainMenu.Show();
+        }
     }
 }
