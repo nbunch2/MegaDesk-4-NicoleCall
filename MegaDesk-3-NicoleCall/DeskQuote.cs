@@ -11,6 +11,7 @@ namespace MegaDesk_3_NicoleCall
         public string customerName { get; set; }
         public int rushOption { get; set; }
         public int size { get; set; }
+       
 
     }
 }
