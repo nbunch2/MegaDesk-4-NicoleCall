@@ -22,5 +22,10 @@ namespace MegaDesk_3_NicoleCall
             var mainMenu = (MainMenu)Tag;
             mainMenu.Show();
         }
+
+        private void loadGrid(string searchTerm)
+        {
+            //dataGridview1.Rows.Clear();
+        }
     }
 }

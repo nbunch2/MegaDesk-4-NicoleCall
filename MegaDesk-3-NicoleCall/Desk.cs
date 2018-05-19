@@ -6,13 +6,37 @@ using System.Threading.Tasks;
 
 namespace MegaDesk_3_NicoleCall
 {
-    class Desk
+    public class Desk
     {
-        public String customerName { get; set; }
-        public int width { get; set; }
-        public int depth { get; set; }
-        public int drawers { get; set; }
-        public string material { get; set; }
-        public int rushOrder { get; set; }
-    }
+        //ENUMS
+        public enum SurfaceMaterials
+        {
+            Laminate,
+            Oak,
+            Pine,
+            Rosewood,
+            Veneer
+
+        }
+
+        //dektopMaterialComboBox.DataSource = Surface;
+
+  
+
+        //public String CustomerName { get; set; }
+        public decimal Width { get; set; }
+        public decimal Depth { get; set; }
+        public int Drawers { get; set; }
+        public SurfaceMaterials SurfaceMaterial { get; set; }
+        //public Rush RushOrder { get; set; }
+
+        public decimal surfaceMaterialCost;
+           
 }
+    }
+
+
+    
+
+
+

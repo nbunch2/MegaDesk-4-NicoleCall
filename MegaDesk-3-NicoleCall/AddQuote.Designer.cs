@@ -38,12 +38,12 @@
             this.drawers = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.wood = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.requestQuote = new System.Windows.Forms.Button();
             this.cancel = new System.Windows.Forms.Button();
+            this.desktopMaterialComboBox = new System.Windows.Forms.ComboBox();
+            this.rushOrderComboBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.width)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.depth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.drawers)).BeginInit();
@@ -171,20 +171,6 @@
             this.label6.TabIndex = 9;
             this.label6.Text = "We have laminate, oak, rosewood, veneer and pine available";
             // 
-            // wood
-            // 
-            this.wood.Location = new System.Drawing.Point(156, 236);
-            this.wood.Name = "wood";
-            this.wood.Size = new System.Drawing.Size(100, 22);
-            this.wood.TabIndex = 10;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(173, 316);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 11;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -228,17 +214,33 @@
             this.cancel.UseVisualStyleBackColor = false;
             this.cancel.Click += new System.EventHandler(this.cancel_Click);
             // 
+            // desktopMaterialComboBox
+            // 
+            this.desktopMaterialComboBox.FormattingEnabled = true;
+            this.desktopMaterialComboBox.Location = new System.Drawing.Point(152, 236);
+            this.desktopMaterialComboBox.Name = "desktopMaterialComboBox";
+            this.desktopMaterialComboBox.Size = new System.Drawing.Size(121, 24);
+            this.desktopMaterialComboBox.TabIndex = 16;
+            // 
+            // rushOrderComboBox
+            // 
+            this.rushOrderComboBox.FormattingEnabled = true;
+            this.rushOrderComboBox.Location = new System.Drawing.Point(173, 316);
+            this.rushOrderComboBox.Name = "rushOrderComboBox";
+            this.rushOrderComboBox.Size = new System.Drawing.Size(121, 24);
+            this.rushOrderComboBox.TabIndex = 17;
+            // 
             // AddQuote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.rushOrderComboBox);
+            this.Controls.Add(this.desktopMaterialComboBox);
             this.Controls.Add(this.cancel);
             this.Controls.Add(this.requestQuote);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.wood);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.drawers);
@@ -272,11 +274,11 @@
         private System.Windows.Forms.NumericUpDown drawers;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox wood;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button requestQuote;
         private System.Windows.Forms.Button cancel;
+        private System.Windows.Forms.ComboBox desktopMaterialComboBox;
+        private System.Windows.Forms.ComboBox rushOrderComboBox;
     }
 }
