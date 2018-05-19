@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.quotesViewAll = new System.Windows.Forms.DataGridView();
             this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CustomerName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.deskWidth = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -37,13 +37,15 @@
             this.SurfaceMaterial = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.RushOrder = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FinalQuote = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quotesViewAll)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // quotesViewAll
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.quotesViewAll.AllowUserToDeleteRows = false;
+            this.quotesViewAll.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.quotesViewAll.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.quotesViewAll.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Date,
             this.CustomerName,
             this.deskWidth,
@@ -52,69 +54,78 @@
             this.SurfaceMaterial,
             this.RushOrder,
             this.FinalQuote});
-            this.dataGridView1.Location = new System.Drawing.Point(29, 44);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(843, 362);
-            this.dataGridView1.TabIndex = 1;
+            this.quotesViewAll.Location = new System.Drawing.Point(29, 44);
+            this.quotesViewAll.Name = "quotesViewAll";
+            this.quotesViewAll.RowTemplate.Height = 24;
+            this.quotesViewAll.Size = new System.Drawing.Size(843, 362);
+            this.quotesViewAll.TabIndex = 1;
             // 
             // Date
             // 
             this.Date.HeaderText = "Date";
             this.Date.Name = "Date";
+            this.Date.Width = 67;
             // 
             // CustomerName
             // 
             this.CustomerName.HeaderText = "Customer Name";
             this.CustomerName.Name = "CustomerName";
+            this.CustomerName.Width = 127;
             // 
             // deskWidth
             // 
             this.deskWidth.HeaderText = "Width";
             this.deskWidth.Name = "deskWidth";
+            this.deskWidth.Width = 73;
             // 
             // deskDepth
             // 
             this.deskDepth.HeaderText = "Depth";
             this.deskDepth.Name = "deskDepth";
+            this.deskDepth.Width = 75;
             // 
             // Drawers
             // 
             this.Drawers.HeaderText = "Drawers";
             this.Drawers.Name = "Drawers";
+            this.Drawers.Width = 89;
             // 
             // SurfaceMaterial
             // 
             this.SurfaceMaterial.HeaderText = "Surface Material";
             this.SurfaceMaterial.Name = "SurfaceMaterial";
+            this.SurfaceMaterial.Width = 128;
             // 
             // RushOrder
             // 
             this.RushOrder.HeaderText = "Rush Order";
             this.RushOrder.Name = "RushOrder";
+            this.RushOrder.Width = 102;
             // 
             // FinalQuote
             // 
             this.FinalQuote.HeaderText = "Final Quote";
             this.FinalQuote.Name = "FinalQuote";
+            this.FinalQuote.Width = 101;
             // 
             // ViewAllQuotes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(932, 483);
+            this.Controls.Add(this.quotesViewAll);
+            this.MinimumSize = new System.Drawing.Size(950, 530);
             this.Name = "ViewAllQuotes";
             this.Text = "ViewAllQuotes";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ViewAllQuotes_FormClosed);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quotesViewAll)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView quotesViewAll;
         private System.Windows.Forms.DataGridViewTextBoxColumn Date;
         private System.Windows.Forms.DataGridViewTextBoxColumn CustomerName;
         private System.Windows.Forms.DataGridViewTextBoxColumn deskWidth;

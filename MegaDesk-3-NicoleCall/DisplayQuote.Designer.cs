@@ -51,6 +51,7 @@
             // 
             // rushOrderComboBox
             // 
+            this.rushOrderComboBox.Enabled = false;
             this.rushOrderComboBox.FormattingEnabled = true;
             this.rushOrderComboBox.Location = new System.Drawing.Point(178, 308);
             this.rushOrderComboBox.Name = "rushOrderComboBox";
@@ -59,6 +60,7 @@
             // 
             // desktopMaterialComboBox
             // 
+            this.desktopMaterialComboBox.Enabled = false;
             this.desktopMaterialComboBox.FormattingEnabled = true;
             this.desktopMaterialComboBox.Location = new System.Drawing.Point(157, 228);
             this.desktopMaterialComboBox.Name = "desktopMaterialComboBox";
@@ -105,6 +107,7 @@
             // 
             // drawers
             // 
+            this.drawers.Enabled = false;
             this.drawers.Location = new System.Drawing.Point(203, 133);
             this.drawers.Maximum = new decimal(new int[] {
             7,
@@ -127,6 +130,7 @@
             // 
             // depth
             // 
+            this.depth.Enabled = false;
             this.depth.Location = new System.Drawing.Point(458, 73);
             this.depth.Maximum = new decimal(new int[] {
             48,
@@ -159,6 +163,7 @@
             // 
             // width
             // 
+            this.width.Enabled = false;
             this.width.Location = new System.Drawing.Point(161, 71);
             this.width.Maximum = new decimal(new int[] {
             96,
@@ -191,6 +196,7 @@
             // 
             // customerName
             // 
+            this.customerName.Enabled = false;
             this.customerName.Location = new System.Drawing.Point(138, 19);
             this.customerName.Name = "customerName";
             this.customerName.Size = new System.Drawing.Size(191, 22);

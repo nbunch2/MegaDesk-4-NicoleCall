@@ -131,7 +131,7 @@ namespace MegaDesk_3_NicoleCall
             }
             catch(Exception)
             {
-                   
+                MessageBox.Show("An error has occured");   
             }
            
 

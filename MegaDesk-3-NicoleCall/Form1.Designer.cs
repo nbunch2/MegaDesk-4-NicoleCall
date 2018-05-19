@@ -55,7 +55,7 @@
             this.viewQuote.Name = "viewQuote";
             this.viewQuote.Size = new System.Drawing.Size(205, 60);
             this.viewQuote.TabIndex = 1;
-            this.viewQuote.Text = "View Quote";
+            this.viewQuote.Text = "View All Quotes";
             this.viewQuote.UseVisualStyleBackColor = true;
             this.viewQuote.Click += new System.EventHandler(this.viewQuote_Click);
             // 
